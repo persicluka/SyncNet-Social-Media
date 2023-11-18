@@ -1,0 +1,113 @@
+.rightBar {
+  flex: 3;
+  position: sticky;
+  top: 5rem;
+  height: calc(100vh - 9rem);
+  .container {
+    .menu-top {
+      display: flex;
+      flex-direction: column;
+      background-color: white;
+      width: 100%;
+      gap: 1rem;
+      padding: 2rem;
+      height: 14.5rem;
+      border-radius: 0.5rem;
+      span {
+        color: rgb(169, 169, 169);
+      }
+      .item {
+        display: flex;
+        margin-top: 1rem;
+        justify-content: space-between;
+        .user {
+          display: flex;
+          align-items: center;
+          gap: 0.5rem;
+          cursor: pointer;
+          img {
+            height: 2rem;
+            width: 2rem;
+            border-radius: 50%;
+          }
+          span {
+            color: black;
+          }
+        }
+        button {
+          padding: 0 1rem;
+          height: 2rem;
+          border: none;
+          background-color: rgb(44, 139, 248);
+          color: white;
+          border-radius: 1rem;
+          transition: all 0.2s ease-out;
+          cursor: pointer;
+          &:hover {
+            background-color: rgb(27, 109, 203);
+          }
+        }
+      }
+    }
+
+    .menu-bottom {
+      margin-top: 1rem;
+      display: flex;
+      flex-direction: column;
+      background-color: white;
+      width: 100%;
+      gap: 1rem;
+      padding: 0 2rem 2rem 2rem;
+      height: calc(100vh - 20rem);
+      overflow: scroll;
+      border-radius: 0.5rem;
+
+      .title-container {
+        position: sticky;
+        top: 0;
+        background-color: white;
+        padding: 2rem 0;
+        height: 10rem;
+        z-index: 1;
+        border-bottom: 1px solid lightgray;
+      }
+
+      span {
+        color: rgba(169, 169, 169, 0.734);
+      }
+      .item {
+        display: flex;
+        margin-top: 1rem;
+        align-items: center;
+        justify-content: space-between;
+        position: relative;
+        .acitve-icon {
+          width: 0.6rem;
+          height: 0.6rem;
+          background-color: limegreen;
+          border-radius: 50%;
+          position: absolute;
+          bottom: 0;
+          left: 1.5rem;
+        }
+        .user {
+          display: flex;
+          align-items: center;
+          gap: 0.5rem;
+          cursor: pointer;
+
+          img {
+            height: 2rem;
+            width: 2rem;
+            border-radius: 50%;
+            border: 2px solid rgb(44, 139, 248);
+          }
+          span {
+            color: black;
+            font-size: 1rem;
+          }
+        }
+      }
+    }
+  }
+}

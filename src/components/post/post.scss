@@ -1,0 +1,43 @@
+.post {
+  background-color: white;
+  flex-direction: column;
+  overflow: hidden;
+  width: 50vw;
+  height: 50vw;
+  margin: 0 auto;
+  border-radius: 0.5rem;
+
+  .header {
+    display: flex;
+    padding: 1rem 2rem;
+    align-items: center;
+    justify-content: space-between;
+    .user-info {
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+      cursor: pointer;
+      img {
+        width: 2rem;
+        height: 2rem;
+        object-fit: cover;
+        border-radius: 50%;
+        align-items: center;
+        object-position: center;
+      }
+      span {
+      }
+    }
+  }
+
+  .content {
+    img {
+      display: block;
+      margin: 0 auto;
+      width: 46.5vw;
+      height: 40vw;
+      object-fit: cover;
+      border-radius: 0.5rem;
+    }
+  }
+}

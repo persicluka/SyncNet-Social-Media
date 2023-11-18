@@ -1,0 +1,25 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+::selection {
+  background-color: #e4d69e;
+  color: #000;
+}
+
+.app {
+  background-color: rgba(211, 211, 211, 0.554);
+}
+
+span {
+  letter-spacing: 0.02rem;
+}
+
+*::-webkit-scrollbar {
+  display: none;
+}

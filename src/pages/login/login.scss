@@ -1,0 +1,110 @@
+$button-color: rgb(225, 213, 188);
+$button-hover-color: rgb(206, 182, 130);
+$register-button-color: rgb(238, 221, 187);
+$bg-color: rgb(243, 242, 240);
+$image-link: "https://images.unsplash.com/photo-1491438590914-bc09fcaaf77a?q=80&w=2370&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D";
+
+.login {
+  height: 100vh;
+  background-color: $bg-color;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  .card {
+    width: 50%;
+    border-radius: 0.625rem;
+    background-color: #fff;
+    display: flex;
+    min-height: 40rem;
+    overflow: hidden;
+
+    .left {
+      flex: 1;
+      background: linear-gradient(rgba(85, 85, 85, 0.368), rgba(0, 0, 0, 0.622)),
+        url($image-link) center;
+      background-size: cover;
+      padding: 3.125rem;
+      display: flex;
+      flex-direction: column;
+      gap: 1.875rem;
+      h1 {
+        color: white;
+        font-size: 4.5rem;
+        line-height: 5rem;
+      }
+
+      p {
+        color: white;
+        line-height: 1.5625rem;
+        width: 80%;
+      }
+      span {
+        color: lightgrey;
+        font-size: 0.875rem;
+        text-decoration: underline;
+      }
+      button {
+        margin-top: -1.25rem;
+        width: 50%;
+        padding: 0.65rem;
+        border-radius: 0.3125rem;
+        background-color: transparent;
+        border: 3px solid $button-color;
+        font-weight: 700;
+        color: $button-color;
+        text-transform: uppercase;
+        letter-spacing: 0.07rem;
+        font-size: 1rem;
+        cursor: pointer;
+        transition: all ease-out 0.2s;
+        &:hover {
+          background-color: $button-color;
+          color: rgb(61, 61, 61);
+        }
+      }
+    }
+
+    .right {
+      flex: 1;
+      padding: 3.125rem;
+      display: flex;
+      flex-direction: column;
+      gap: 3.125rem;
+      h1 {
+        font-size: 3.125rem;
+        color: lightgray;
+      }
+
+      form {
+        display: flex;
+        flex-direction: column;
+        gap: 1.875rem;
+        input {
+          padding: 1rem;
+          border: 0.0625rem solid lightgrey;
+          border-radius: 0.3125rem;
+          font-size: 1rem;
+        }
+        button {
+          padding: 0.65rem;
+          background-color: $button-color;
+          border: none;
+          border-radius: 0.3125rem;
+          text-transform: uppercase;
+          color: rgb(61, 61, 61);
+          letter-spacing: 0.0625rem;
+          font-size: 1rem;
+          font-weight: 700;
+          cursor: pointer;
+          transition: all ease-out 0.2s;
+          &:hover {
+            background-color: $button-hover-color;
+            color: rgb(61, 61, 61);
+          }
+        }
+      }
+    }
+  }
+}
