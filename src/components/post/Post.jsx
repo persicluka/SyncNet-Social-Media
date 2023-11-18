@@ -1,5 +1,8 @@
-import React from "react";
+import React, { useState } from "react";
 import MoreHorizIcon from "@mui/icons-material/MoreHoriz";
+import FavoriteBorderIcon from "@mui/icons-material/FavoriteBorder";
+import TextsmsOutlinedIcon from "@mui/icons-material/TextsmsOutlined";
+import ShareOutlinedIcon from "@mui/icons-material/ShareOutlined";
 import "./post.scss";
 
 function Post({ post }) {
@@ -13,12 +16,21 @@ function Post({ post }) {
         <MoreHorizIcon style={{ cursor: "pointer", height: "2rem" }} />
       </div>
       <div className="content">
+        <div className="description">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur,
+          blanditiis?
+        </div>
         <img src={post.image} alt="" />
       </div>
-      <div
-        className="interactions
-      "
-      ></div>
+      <div className="activity">
+        <div className="like-share">
+          <FavoriteBorderIcon className="activity-icon" />
+          <span>111k</span>
+          <TextsmsOutlinedIcon className="activity-icon" />
+          <span>12k</span>
+        </div>
+        <ShareOutlinedIcon className="activity-icon" />
+      </div>
     </div>
   );
 }

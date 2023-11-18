@@ -35,6 +35,7 @@ const posts = [
 function Posts() {
   return (
     <div className="posts">
+      <h1>New posts</h1>
       {posts.map((post) => (
         <Post post={post} key={post.id} />
       ))}

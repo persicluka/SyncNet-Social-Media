@@ -20,7 +20,7 @@
     }
   }
   .left {
-    flex: 1;
+    flex: 2;
     display: flex;
     align-items: center;
     gap: 1.5rem;
@@ -33,7 +33,7 @@
 
     .search {
       margin-left: 2rem;
-      border: 1px solid lightgrey;
+      border: 1px solid rgba(44, 139, 248, 0.445);
       padding: 0.4rem 0.8rem;
       border-radius: 0.4rem;
       display: flex;
