@@ -11,6 +11,7 @@
   .icon {
     color: grey;
     cursor: pointer;
+    font-size: 1.6rem;
     transition: all 0.1s ease-in;
     &:hover {
       color: rgb(44, 139, 248);
@@ -40,7 +41,12 @@
       input {
         margin-left: 0.5rem;
         border: none;
-        width: 20rem;
+        width: 100%;
+        font-size: 1rem;
+        &:focus {
+          border: none;
+          outline: none;
+        }
       }
     }
   }
