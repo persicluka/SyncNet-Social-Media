@@ -3,8 +3,10 @@
   justify-content: space-between;
   padding: 1rem 2em;
   height: 4rem;
-  border-bottom: 1px solid rgba(211, 211, 211, 0.478);
-  background-color: white;
+  border-bottom: 1px solid rgba(211, 211, 211, 0.438);
+  background-color: rgba(255, 255, 255, 0.8);
+  backdrop-filter: blur(10px);
+  box-shadow: 0px 18px 47px -16px rgba(13, 29, 56, 0.193);
   position: sticky;
   top: 0;
   z-index: 100;
@@ -40,6 +42,7 @@
       gap: 0.2rem;
       input {
         margin-left: 0.5rem;
+        background-color: transparent;
         border: none;
         width: 100%;
         font-size: 1rem;

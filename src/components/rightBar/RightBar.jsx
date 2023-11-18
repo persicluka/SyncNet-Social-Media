@@ -35,7 +35,7 @@ function RightBar() {
               <img src={imageLink} />
               <span>Jane Doe</span>
             </div>
-            <span>Active now</span>
+            <span className="active-now">Active now</span>
           </div>
 
           <div className="item">
@@ -44,7 +44,7 @@ function RightBar() {
               <img src={imageLink} />
               <span>Jane Doe</span>
             </div>
-            <span>Active now</span>
+            <span className="active-now">Active now</span>
           </div>
 
           <div className="item">
@@ -53,7 +53,7 @@ function RightBar() {
               <img src={imageLink} />
               <span>Jane Doe</span>
             </div>
-            <span>Active now</span>
+            <span className="active-now">Active now</span>
           </div>
 
           <div className="item">
@@ -62,7 +62,7 @@ function RightBar() {
               <img src={imageLink} />
               <span>Jane Doe</span>
             </div>
-            <span>Active now</span>
+            <span className="active-now">Active now</span>
           </div>
 
           <div className="item">
@@ -71,7 +71,7 @@ function RightBar() {
               <img src={imageLink} />
               <span>Jane Doe</span>
             </div>
-            <span>Active now</span>
+            <span className="active-now">Active now</span>
           </div>
 
           <div className="item">
@@ -80,7 +80,7 @@ function RightBar() {
               <img src={imageLink} />
               <span>Jane Doe</span>
             </div>
-            <span>Active now</span>
+            <span className="active-now">Active now</span>
           </div>
 
           <div className="item">
@@ -89,7 +89,7 @@ function RightBar() {
               <img src={imageLink} />
               <span>Jane Doe</span>
             </div>
-            <span>Active now</span>
+            <span className="active-now">Active now</span>
           </div>
 
           <div className="item">
@@ -98,7 +98,7 @@ function RightBar() {
               <img src={imageLink} />
               <span>Jane Doe</span>
             </div>
-            <span>Active now</span>
+            <span className="active-now">Active now</span>
           </div>
 
           <div className="item">
@@ -107,7 +107,7 @@ function RightBar() {
               <img src={imageLink} />
               <span>Jane Doe</span>
             </div>
-            <span>Active now</span>
+            <span className="active-now">Active now</span>
           </div>
 
           <div className="item">
@@ -116,7 +116,7 @@ function RightBar() {
               <img src={imageLink} />
               <span>Jane Doe</span>
             </div>
-            <span>Active now</span>
+            <span className="active-now">Active now</span>
           </div>
 
           <div className="item">
@@ -125,7 +125,7 @@ function RightBar() {
               <img src={imageLink} />
               <span>Jane Doe</span>
             </div>
-            <span>Active now</span>
+            <span className="active-now">Active now</span>
           </div>
         </div>
       </div>
