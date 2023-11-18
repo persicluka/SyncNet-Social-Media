@@ -35,6 +35,10 @@ const posts = [
 function Posts() {
   return (
     <div className="posts">
+      <div className="create-post">
+        <input type="text" placeholder="What's new today?" />
+        <button>+</button>
+      </div>
       <h1>New posts</h1>
       {posts.map((post) => (
         <Post post={post} key={post.id} />
