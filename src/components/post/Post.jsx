@@ -5,7 +5,7 @@ import TextsmsOutlinedIcon from "@mui/icons-material/TextsmsOutlined";
 import ShareOutlinedIcon from "@mui/icons-material/ShareOutlined";
 import "./post.scss";
 
-function Post({ post }) {
+function Post({ post, toggleComments }) {
   return (
     <div className="post">
       <div className="header">
@@ -34,7 +34,10 @@ function Post({ post }) {
           </div>
 
           <div className="activity-info">
-            <TextsmsOutlinedIcon className="activity-icon" />
+            <TextsmsOutlinedIcon
+              className="activity-icon"
+              onClick={toggleComments}
+            />
             <span>12k</span>
           </div>
         </div>

@@ -2,18 +2,16 @@ import React from "react";
 import App from "../../App";
 import "./comments.scss";
 
-function Comments({ isClicked }) {
-  if (isClicked) {
-    <App commentsOpened={isClicked} />;
-  }
+function Comments({ openComments, toggleComments }) {
   return (
     <div
       className="comments"
       style={{
-        transform: isClicked ? "translateY(35rem)" : "translateY(-35rem)",
+        transform: openComments ? "translateY(-35rem)" : "translateY(35rem)",
       }}
     >
-      Comments
+      <span>Comments</span>
+      <button onClick={toggleComments}>Close</button>
     </div>
   );
 }

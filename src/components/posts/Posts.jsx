@@ -34,28 +34,23 @@ const posts = [
 ];
 
 function Posts() {
-  const [isClicked, setIsClicked] = useState(false);
-
-  const toggleClick = () => {
-    setIsClicked((prevIsClicked) => !prevIsClicked);
-  };
-
-  const commentsStyle = {
-    backgroundColor: isClicked ? "blue" : "yellow",
-    // Add other styles as needed
+  const [openComments, setOpenComments] = useState(false);
+  const toggleComments = () => {
+    setOpenComments(!openComments);
   };
 
   return (
     <div className="posts">
       <div className="create-post">
         <input type="text" placeholder="What's new today?" />
-        <button onClick={toggleClick}>+</button>
+        <button>+</button>
       </div>
       <h1>New posts</h1>
       {posts.map((post) => (
-        <Post post={post} key={post.id} />
+        <Post post={post} key={post.id} toggleComments={toggleComments} />
       ))}
-      <Comments isClicked={isClicked} />
+
+      <Comments openComments={openComments} toggleComments={toggleComments} />
     </div>
   );
 }
