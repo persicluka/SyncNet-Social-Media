@@ -1,19 +1,18 @@
 .comments {
   width: 37rem;
   height: 35rem;
-  display: block;
   background-color: rgba(255, 255, 255, 0.905);
   backdrop-filter: blur(20px);
   border-radius: 0.5rem;
   text-align: center;
   padding: 2rem;
   position: fixed;
-  margin: 0;
   bottom: -35rem;
   transition: transform 0.3s ease-out;
   display: flex;
   justify-content: space-around;
-
+  border: 2px solid lightgrey;
+  z-index: 100;
   span {
     font-weight: 600;
   }
