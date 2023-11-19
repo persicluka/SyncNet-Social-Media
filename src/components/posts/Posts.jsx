@@ -1,6 +1,7 @@
-import React from "react";
+import React, { useState } from "react";
 import Post from "../post/Post";
 import "./posts.scss";
+import Comments from "../comments/Comments";
 const posts = [
   {
     id: 1,
@@ -33,16 +34,28 @@ const posts = [
 ];
 
 function Posts() {
+  const [isClicked, setIsClicked] = useState(false);
+
+  const toggleClick = () => {
+    setIsClicked((prevIsClicked) => !prevIsClicked);
+  };
+
+  const commentsStyle = {
+    backgroundColor: isClicked ? "blue" : "yellow",
+    // Add other styles as needed
+  };
+
   return (
     <div className="posts">
       <div className="create-post">
         <input type="text" placeholder="What's new today?" />
-        <button>+</button>
+        <button onClick={toggleClick}>+</button>
       </div>
       <h1>New posts</h1>
       {posts.map((post) => (
         <Post post={post} key={post.id} />
       ))}
+      <Comments isClicked={isClicked} />
     </div>
   );
 }

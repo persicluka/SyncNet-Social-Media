@@ -1,0 +1,14 @@
+.comments {
+  height: 35rem;
+  width: 44vw;
+  display: block;
+  background-color: rgba(255, 255, 255, 0.656);
+  backdrop-filter: blur(20px);
+  border-radius: 0.5rem;
+  text-align: center;
+  padding: 2rem;
+  position: fixed;
+  left: 23.6%;
+  bottom: -35rem;
+  transition: transform 0.3s ease-out;
+}
