@@ -9,7 +9,7 @@
 
   .header {
     display: flex;
-    padding: 1rem 2rem;
+    padding: 2rem 2rem 1rem 2rem;
     align-items: center;
     justify-content: space-between;
     .user-info {
@@ -24,8 +24,6 @@
         border-radius: 50%;
         align-items: center;
         object-position: center;
-      }
-      span {
       }
     }
   }
@@ -56,7 +54,7 @@
     margin-top: 1rem;
 
     .activity-icon {
-      font-size: 2.3rem;
+      font-size: 2rem;
       color: grey;
       cursor: pointer;
       &:hover {
@@ -71,6 +69,12 @@
 
       span {
         color: rgb(66, 66, 66);
+      }
+
+      .activity-info {
+        display: flex;
+        align-items: center;
+        gap: 0.2rem;
       }
     }
   }

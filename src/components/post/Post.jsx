@@ -13,8 +13,11 @@ function Post({ post }) {
           <img src={post.image} alt="" />
           <span>{post.name}</span>
         </div>
-        <MoreHorizIcon style={{ cursor: "pointer", height: "2rem" }} />
+        <MoreHorizIcon
+          style={{ cursor: "pointer", height: "2rem", fontSize: "2rem" }}
+        />
       </div>
+
       <div className="content">
         <div className="description">
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur,
@@ -22,12 +25,18 @@ function Post({ post }) {
         </div>
         <img src={post.image} alt="" />
       </div>
+
       <div className="activity">
         <div className="like-share">
-          <FavoriteBorderIcon className="activity-icon" />
-          <span>111k</span>
-          <TextsmsOutlinedIcon className="activity-icon" />
-          <span>12k</span>
+          <div className="activity-info">
+            <FavoriteBorderIcon className="activity-icon" />
+            <span>111k</span>
+          </div>
+
+          <div className="activity-info">
+            <TextsmsOutlinedIcon className="activity-icon" />
+            <span>12k</span>
+          </div>
         </div>
         <ShareOutlinedIcon className="activity-icon" />
       </div>
