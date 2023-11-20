@@ -82,7 +82,7 @@
       border-radius: 0.5rem;
       @media screen and (max-width: 1200px) {
         align-items: center;
-        height: 35rem;
+        height: calc(100vh - 24rem);
         .active-now {
           display: none;
         }
