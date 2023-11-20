@@ -15,9 +15,18 @@ function Navbar() {
     <div className="navbar">
       <div className="left">
         <Link to={"/"} style={{ textDecoration: "none" }}>
-          <span>SyncNet.</span>
+          <span>SyncMe.</span>
         </Link>
-        <HomeOutlinedIcon className="icon" />
+        <Link
+          to={"/"}
+          style={{
+            display: "flex",
+            alignItems: "center",
+            justifyContent: "center",
+          }}
+        >
+          <HomeOutlinedIcon className="icon" />
+        </Link>
         <DarkModeOutlinedIcon className="icon" />
         <GridViewOutlinedIcon className="icon" />
 

@@ -4,15 +4,21 @@ import FavoriteBorderIcon from "@mui/icons-material/FavoriteBorder";
 import TextsmsOutlinedIcon from "@mui/icons-material/TextsmsOutlined";
 import ShareOutlinedIcon from "@mui/icons-material/ShareOutlined";
 import "./post.scss";
+import { Link } from "react-router-dom";
 
 function Post({ post, toggleComments }) {
   return (
     <div className="post">
       <div className="header">
-        <div className="user-info">
-          <img src={post.image} alt="" />
-          <span>{post.name}</span>
-        </div>
+        <Link
+          to={"/profile/:id"}
+          style={{ textDecoration: "none", color: "inherit" }}
+        >
+          <div className="user-info">
+            <img src={post.image} alt="" />
+            <span>{post.name}</span>
+          </div>
+        </Link>
         <MoreHorizIcon
           style={{ cursor: "pointer", height: "2rem", fontSize: "2rem" }}
         />
