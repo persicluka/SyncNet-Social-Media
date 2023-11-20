@@ -1,10 +1,11 @@
 import React from "react";
+
 import "./profile.scss";
 
 function Profile() {
   return (
     <div className="profile">
-      <span>Profile page</span>
+      <img src="" alt="" />
       <hr />
     </div>
   );
