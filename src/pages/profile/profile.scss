@@ -1,24 +1,38 @@
 .profile {
-  background-color: white;
-  height: 20%;
-  width: 50vw;
+  height: 40rem;
+  width: 52vw;
   min-width: 37rem;
   margin: 0 auto;
   border-radius: 0.5rem;
-  padding: 2rem;
-  text-align: center;
+  overflow: hidden;
 
-  span {
-    text-transform: uppercase;
-    font-size: 1.5rem;
-    font-weight: 600;
-    color: lightgrey;
+  .images {
+    width: 100%;
+    position: relative;
+    img {
+      width: 100%;
+      height: 10rem;
+      object-fit: cover;
+    }
+
+    .profilePic {
+      width: 10rem;
+      border-radius: 50%;
+      position: absolute;
+      top: 5rem;
+      left: 50%;
+      transform: translateX(-50%);
+    }
   }
 
-  hr {
-    margin-top: 1rem;
-    border: none;
-    height: 1px;
-    background-color: lightgrey;
+  .profile {
+    background-color: white;
+    height: 10rem;
+    width: 37vw;
+    padding: 2rem;
+    margin-top: 0.5rem;
+
+    span {
+    }
   }
 }
