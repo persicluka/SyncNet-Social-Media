@@ -7,19 +7,24 @@ import Home from "./pages/home/Home";
 import Profile from "./pages/profile/Profile";
 
 import "./app.scss";
+import "./style.scss";
+
 import {
   createBrowserRouter,
   Navigate,
   Outlet,
   RouterProvider,
 } from "react-router-dom";
+import { useContext } from "react";
+import { DarkModeContext } from "./context/darkModeContext";
 
 function App() {
   const currentUser = true;
+  const { darkMode } = useContext(DarkModeContext);
 
   const Layout = () => {
     return (
-      <div>
+      <div className={darkMode ? "theme-light" : "theme-dark"}>
         <Navbar />
         <div style={{ display: "flex", gap: "1rem" }}>
           <LeftBar />
